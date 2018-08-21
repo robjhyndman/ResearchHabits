@@ -299,6 +299,19 @@ Someone should be able to reproduce your thesis without having to guess what sof
 
 \placefig{8.5}{5.5}{width=4.2cm}{github}
 
+## Some rules for good graphics
+\fontsize{14}{16}\sf
+
+1. Design graphics to highlight comparisons you want the reader to make.
+1. Choose scales to facilitate comparisons.
+1. Use a sensible aspect ratio. width:height of about 1.6, unless axes are on the same scale.
+1. Prepare graphics in final aspect ratio. Distorted fonts look awful.
+1. Use vector graphics such as eps or pdf.
+1. Clear labels and detailed captions.
+1. Avoid cluttered legends.
+1. Specify units.
+1. Label axes.
+
 
 # Writing
 
@@ -384,19 +397,6 @@ Someone should be able to reproduce your thesis without having to guess what sof
  * quite
  * of course
  * Notice that
-
-## Some rules for good graphics
-\fontsize{14}{16}\sf
-
-1. Design graphics to highlight comparisons you want the reader to make.
-1. Choose scales to facilitate comparisons.
-1. Use a sensible aspect ratio. width:height of about 1.6, unless axes are on the same scale.
-1. Prepare graphics in final aspect ratio. Distorted fonts look awful.
-1. Use vector graphics such as eps or pdf.
-1. Clear labels and detailed captions.
-1. Avoid cluttered legends.
-1. Specify units.
-1. Label axes.
 
 ## Writing an abstract
 \fontsize{15}{19}\sf
