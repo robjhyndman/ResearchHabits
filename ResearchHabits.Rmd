@@ -406,6 +406,6 @@ Someone should be able to reproduce your thesis without having to guess what sof
 \fontsize{13}{16}\sf
 
 ###
-* **Slides**:\newline `robjhyndman.com/seminars/ResearchHabits`
+* **Slides**:\newline `robjhyndman.com/seminars/research_habits`
 * **Github**:\newline `happygitwithr.com`
 * **Rmarkdown thesis template**:\newline `github.com/robjhyndman/MonashHonoursThesis`
