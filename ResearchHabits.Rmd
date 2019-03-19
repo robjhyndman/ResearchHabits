@@ -1,16 +1,14 @@
 ---
 title: "Developing Good Research Habits"
 author: "Rob J Hyndman"
-date: "22 August 2018"
-fontsize: 14pt
+date: "20 March 2019"
+colortheme: monashwhite
+toc: true
 output:
-  beamer_presentation:
+  binb::monash:
     fig_height: 4.33
     fig_width: 6
-    highlight: tango
-    keep_tex: no
     incremental: no
-    theme: metropolis
     includes:
       in_header: preamble.tex
 ---
