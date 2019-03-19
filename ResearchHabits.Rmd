@@ -44,8 +44,8 @@ Listen up, young padawans
 \placefig{7.4}{1.4}{width=5.1cm}{Mendeley}
 
 \begin{textblock}{6.}(.4,1.2)
-\begin{alertblock}{Mendeley}\fontsize{11}{12}\sf
-\begin{itemize}\itemsep=1.5mm
+\begin{alertblock}{Mendeley}\fontsize{12}{12}\sf
+\begin{itemize}\itemsep=1.mm
 \item[\textcolor{white}{\ding{229}}] Free and on all operating systems
 \item[\textcolor{white}{\ding{229}}] Web-version and local version synced
 \item[\textcolor{white}{\ding{229}}] Browser extension for adding papers/books
@@ -64,15 +64,15 @@ Listen up, young padawans
 \item Download from \url{www.mendeley.com}
 \end{itemize}
 \end{block}
-\end{textblock}
+\end{textblock}\vspace*{10cm}
 
 ## Managing references
 
 \placefig{6.7}{3}{width=6.1cm}{Zotero}
 
 \begin{textblock}{6.}(.4,1.2)
-\begin{alertblock}{Zotero}\fontsize{11}{12}\sf
-\begin{itemize}\itemsep=1.5mm
+\begin{alertblock}{Zotero}\fontsize{12}{12}\sf
+\begin{itemize}\itemsep=1.mm
 \item[\textcolor{white}{\ding{229}}] Free and on all operating systems
 \item[\textcolor{white}{\ding{229}}] Web-version and local version synced
 \item[\textcolor{white}{\ding{229}}] Browser extension for adding papers/books
@@ -91,7 +91,7 @@ Listen up, young padawans
 \item Download from \url{www.zotero.org}
 \end{itemize}
 \end{block}
-\end{textblock}
+\end{textblock}\vspace*{10cm}
 
 ## Managing references
 
@@ -118,7 +118,7 @@ Listen up, young padawans
 \item Download Google chrome browser extension
 \end{itemize}
 \end{block}
-\end{textblock}
+\end{textblock}\vspace*{10cm}
 
 ## What to cite?
 
@@ -144,7 +144,7 @@ citation("packagename")
 
 \placefig{7.4}{5.4}{width=5.4cm}{bibliography}\vspace*{0.6cm}\vspace*{-0.4cm}
 \begin{textblock}{12}(0.2,1.3)
-\begin{itemize}\parskip=0cm
+\begin{itemize}\tightlist
 \item Every article cited should be sighted, \& preferably \rlap{read.}
  \item  At the very least, check that the article cited really does say what you think it says.
  \item  Type the reference information yourself.
@@ -153,7 +153,7 @@ citation("packagename")
  \item  Give credit where it is due.
 
  \only<2>{
-   \begin{itemize}
+   \begin{itemize}\tightlist
    \item Diebold did not invent PITs.
    \item Hyndman did not invent\newline exponential smoothing or\newline ARIMA models.
    \end{itemize}}
@@ -162,64 +162,17 @@ citation("packagename")
 
 # Searching
 
-## Use Google Scholar for more than searching
+## Google Scholar
 
-\placefig{0}{1.33}{width=12.8cm, height=13cm}{gsfront}
-
-## Use Google Scholar for more than searching
-
-\placefig{0}{1.33}{width=12.8cm, height=13cm}{oddstream}
-
-\only<2>{\begin{textblock}{8.7}(3.2,2.4)
-\begin{block}{}
-\begin{itemize}
-\item Link GS to your reference manager.
-\item Keep everything you are ever likely to cite in your reference manager.
-\end{itemize}
-\end{block}
-\end{textblock}}
-
-## Use Google Scholar for more than searching
-
-\placefig{0}{1.33}{width=12.8cm, height=13cm}{oddstream}
-
-\only<2>{\placefig{2.6}{6.4}{width=2cm}{select}}
-
-
-## Use Google Scholar for more than searching
-
-\placefig{0}{1.33}{width=12.8cm, height=13cm}{gscholar}
-
-\only<2>{\begin{textblock}{8.7}(3.2,6.4)
-\begin{block}{}
-\begin{itemize}
-\item Create your GS profile once you have (at least) one paper.
-\item Follow key authors in your area.
-\end{itemize}
-\end{block}
-\end{textblock}}
-
-## Use Google Scholar for more than searching
-
-\placefig{0}{1.33}{width=12.8cm, height=13cm}{oddstream}
-
-\only<2>{\placefig{.9}{7.3}{width=2cm}{select}}
-
-
-## Use Google Scholar for more than searching
-
-\placefig{0}{1.33}{width=12.8cm, height=13cm}{gsfront}
-
-\only<2>{\placefig{2.2}{1.2}{width=2cm}{select}}
-
-## Use Google Scholar for more than searching
-
-\placefig{0}{1.33}{width=12.8cm, height=13cm}{gslibrary}
-
-## Use Google Scholar for more than searching
-\placefig{0}{1.33}{width=12.8cm, height=13cm}{gsfront}
-
-\only<2->{\placefig{2.4}{5.6}{width=2.4cm}{select}}
+ * Searching for papers
+ * Use advanced search
+ * Link GS to your reference manager
+ * Track citations of key papers
+ * Star papers for your own library
+ * Check recommended articles
+ * Check author profiles, especially highly cited authors
+ * Create your own GS profile once you have (at least) one paper
+ * Follow key authors in your area
 
 
 # Scripting
@@ -313,6 +266,21 @@ Someone should be able to reproduce your thesis without having to guess what sof
 
 # Writing
 
+## Microsoft Word
+
+\placefig{0}{1.1}{width=14cm, height=9cm}{problems}
+
+\only<2>{
+  \begin{textblock}{9}(0.2,1.)
+  \begin{block}{}
+  \begin{itemize}\tightlist
+  \item Impossible to do proper version control
+  \item Poor formatting of equations
+  \item Impossible to make reproducible
+  \item More difficult to automate cross-referencing, numbering
+  \item Files more likely to be corrupted
+  \end{itemize}\end{block}\end{textblock}}
+
 ##
 
 \placefig{.3}{.1}{width=3cm}{latex_logo}
@@ -359,22 +327,6 @@ Someone should be able to reproduce your thesis without having to guess what sof
 \includegraphics[width=5cm]{mythesis}
 \end{block}
 \end{textblock}
-
-
-## Microsoft Word
-
-\placefig{0}{1.1}{width=14cm, height=9cm}{problems}
-
-\only<2>{
-	\begin{textblock}{9}(0.2,1.)
-	\begin{block}{}
-	\begin{itemize}\tightlist
-  \item Impossible to do proper version control
-  \item Poor formatting of equations
-  \item Impossible to make reproducible
-  \item More difficult to automate cross-referencing, numbering
-  \item Files more likely to be corrupted
-  \end{itemize}\end{block}\end{textblock}}
 
 ## Plagiarism
 
@@ -454,6 +406,6 @@ Someone should be able to reproduce your thesis without having to guess what sof
 \fontsize{13}{16}\sf
 
 ###
-* **Slides**:\newline `robjhyndman.com/seminars/Honours2018`
+* **Slides**:\newline `robjhyndman.com/seminars/ResearchHabits`
 * **Github**:\newline `happygitwithr.com`
 * **Rmarkdown thesis template**:\newline `github.com/robjhyndman/MonashHonoursThesis`
