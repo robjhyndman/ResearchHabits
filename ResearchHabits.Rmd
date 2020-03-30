@@ -211,14 +211,6 @@ Someone should be able to reproduce your thesis without having to guess what sof
  * One system for doing this using R is to write your thesis in an Rmarkdown file.
  * Track software versions
 
-\fontsize{12}{12}\sf\vspace*{0.5cm}\pause
-
-\begin{block}{}
-\texttt{\textasciigrave{}\textasciigrave{}\textasciigrave{}\{r\ setup,\ include=FALSE\}}\newline
-\texttt{knitr::opts\_chunk\$set(echo=FALSE)\ writeLines(capture.output(sessionInfo()),}\newline
-\texttt{\hspace*{1cm}   "sessionInfo.txt")}
-\end{block}
-
 ## Version control
 
 \full{live-dangerously}
