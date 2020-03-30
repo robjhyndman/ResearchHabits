@@ -174,6 +174,11 @@ citation("packagename")
  * Create your own GS profile once you have (at least) one paper
  * Follow key authors in your area
 
+## Use the magic button!
+
+\only<1>{\full{magic_button}}
+\only<2>{\full{magic_button2}}
+
 
 # Scripting
 
