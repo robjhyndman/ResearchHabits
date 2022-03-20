@@ -1,7 +1,7 @@
 ---
 title: "Developing Good Research Habits"
 author: "Rob J Hyndman"
-date: "23 March 2021"
+date: "22 March 2022"
 colortheme: monashwhite
 toc: true
 output:
@@ -247,7 +247,7 @@ Someone should be able to reproduce your thesis without having to guess what sof
 
 \placefig{8.5}{5.5}{width=4.2cm}{github}
 
-## Some rules for good graphics
+<!-- ## Some rules for good graphics
 \fontsize{14}{16}\sf
 
 1. Design graphics to highlight comparisons you want the reader to make.
@@ -259,7 +259,7 @@ Someone should be able to reproduce your thesis without having to guess what sof
 1. Avoid cluttered legends.
 1. Specify units.
 1. Label axes.
-
+ -->
 
 # Writing
 
@@ -313,7 +313,8 @@ Someone should be able to reproduce your thesis without having to guess what sof
 \begin{itemize}\itemsep=1.5mm
 \item[\textcolor{white}{\ding{229}}] Combines R and LaTeX into one system
 \item[\textcolor{white}{\ding{229}}] Reproducible research
-\item[\textcolor{white}{\ding{229}}] Monash Honours Template
+\item[\textcolor{white}{\ding{229}}] Monash Honours Template via \texttt{monash} package \\
+{\fontsize{10}{10}\tt{github.com/numbats/\rlap{monash}}}
 \item[\textcolor{white}{\ding{229}}] Useful for assignments too
 \end{itemize}
 \end{alertblock}
@@ -325,12 +326,13 @@ Someone should be able to reproduce your thesis without having to guess what sof
 \end{block}
 \end{textblock}
 
+
 ## Plagiarism
 
 \placefig{1.4}{1.35}{width=11.4cm, trim=0 3 0 0, clip=true}{plagiarism}\vspace*{6.7cm}
 
  * Never plagiarise from other papers — not even sentence fragments. Use your own words.
-
+<!-- 
 ## Words to avoid
 
 **According to Andrew Gelman**
@@ -383,8 +385,8 @@ Someone should be able to reproduce your thesis without having to guess what sof
  * Restrict background information to a sentence or two at most.
  * Make sure that your abstract is consistent with what you reported in the thesis.
  * Write the abstract last
-
-
+ -->
+<!-- 
 ## How to write a lot
 \placefig{6.8}{0}{width=6.3cm, height=9.6cm}{htwal}
 \begin{textblock}{6.5}(0,1.4)
@@ -397,12 +399,13 @@ Someone should be able to reproduce your thesis without having to guess what sof
 \item Build on a scaffold.
 \end{itemize}
 \end{textblock}
+ -->
 
 ## Resources
 
 \fontsize{13}{16}\sf
 
 ###
-* **Slides**:\newline `robjhyndman.com/seminars/research_habits`
+* **Slides**:\newline `bit.ly/research_habits`
 * **Github**:\newline `happygitwithr.com`
-* **Rmarkdown thesis template**:\newline `github.com/robjhyndman/MonashHonoursThesis`
+* **Rmarkdown thesis template**:\newline `github.com/numbats/monash`
