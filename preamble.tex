@@ -1,23 +1,40 @@
 % Monash title page
-\setbeamerfont{title}{series=\bfseries,parent=structure,size=\fontsize{24}{28}}
+\setbeamerfont{title}{series=\bfseries,parent=structure,size=\fontsize{24}{60}}
 \setbeamertemplate{title page}
-{\placefig{-0.01}{-0.01}{width=1.01\paperwidth,height=1.01\paperheight}{MonashTitleSlide}
-    \begin{textblock}{7.5}(1,2)\fontsize{24}{30}\sf
-        {\color{white}\raggedright\usebeamerfont{title}\par\inserttitle}
+{\placefig{-0.01}{-0.01}{width=1.01\paperwidth,height=1.01\paperheight}{title16x9}
+    \begin{textblock}{7.5}(1,2.5)\setstretch{2}
+    {\color{burntorange}\raggedright\usebeamerfont{title}\inserttitle}
     \end{textblock}
-    \begin{textblock}{10.5}(1,6.7)
-        {\color{white}\raggedright{\insertauthor}\\[0.2cm]
+    \begin{textblock}{10.5}(1,6.4)\setstretch{1}
+        {\color{burntorange}\raggedright{\insertauthor}\\[0.2cm]
                 \insertdate\\[0.2cm]
                 \url{bit.ly/research_habits}}
     \end{textblock}
 }
+% Packages
+\usepackage{bm,booktabs,tabularx,setspace}
+\usepackage{animate,soul}
+\DeclareUnicodeCharacter{03BC}{$\mu$}
+\usepackage{fontawesome}
+
+% Figures
+\graphicspath{{figs/}}
 
 % Fonts
-\usepackage{soul,pifont}
 \fontsize{13}{15}\sf
 \usepackage[scale=0.85]{sourcecodepro}
 \DisableLigatures{encoding = T1, family = tt*}
+\usepackage{pifont}
+\ifcsname Shaded\endcsname
+  \definecolor{shadecolor}{RGB}{225,225,225}
+  \renewenvironment{Shaded}{\color{black}\fontsize{10}{10}\sf\begin{snugshade}\color{black}}{\end{snugshade}}
+\fi
+
+% Colors
+\setbeamercolor{description item}{fg=Orange}
+\definecolor{MonashBlue}{RGB}{30,95,139}
+\definecolor{burntorange}{rgb}{0.8, 0.33, 0.0}
 
 % Graphics
 \graphicspath{{figs/}}
-\def\full#1{\vspace*{0.2cm}\par\centerline{\includegraphics[height=8.2cm,width=12.8cm,keepaspectratio=true]{#1}}}
+\def\full#1{\par\centerline{\includegraphics[height=8.2cm,width=12.8cm,keepaspectratio=true]{#1}}}
