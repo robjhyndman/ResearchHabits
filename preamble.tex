@@ -14,7 +14,6 @@
 % Packages
 \usepackage{bm,booktabs,tabularx,setspace}
 \usepackage{animate,soul}
-\DeclareUnicodeCharacter{03BC}{$\mu$}
 \usepackage{fontawesome}
 
 % Figures
@@ -32,9 +31,10 @@
 
 % Colors
 \setbeamercolor{description item}{fg=Orange}
-\definecolor{MonashBlue}{RGB}{30,95,139}
 \definecolor{burntorange}{rgb}{0.8, 0.33, 0.0}
 
 % Graphics
 \graphicspath{{figs/}}
 \def\full#1{\par\centerline{\includegraphics[height=8.2cm,width=12.8cm,keepaspectratio=true]{#1}}}
+
+\setbeamertemplate{frametitle continuation}{}
