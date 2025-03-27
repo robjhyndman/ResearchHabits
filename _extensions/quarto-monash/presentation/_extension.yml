@@ -1,0 +1,48 @@
+title: Presentation
+author: Cynthia Huang and Rob Hyndman
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    common:
+      toc-depth: 1
+      toc-title: Outline
+      date-format: "D MMMM YYYY"
+      slide-number: true
+      show-slide-number: all
+    beamer:
+      aspectratio: 169
+      fontsize: 14pt
+      section-titles: false
+      pdf-engine: xelatex
+      fig-width: 9
+      fig-height: 4.5
+      titlegraphic: bg-02.png
+      titlecolor: black
+      template-partials:
+        - beamer/before-title.tex
+        - beamer/toc.tex
+      format-resources:
+        - beamer/beamerthemeMonash.sty
+    revealjs:
+      title-slide-attributes:
+        data-background-image: "_images/background/bg-10.png"
+        data-background-size: "stretch"
+        data-background-position: "center"
+      theme: [default, revealjs/monash.scss]
+      logo: _images/logo/monash-stacked-blue-rgb-transparent.png
+      html-math-method: katex
+    revealjs+letterbox:
+      width: 1280
+      height: 720
+      self-contained: true
+      html-math-method: katex
+      title-slide-attributes:
+        data-background-image: "_images/background/bg-02.png"
+        data-background-size: "contain"
+        data-background-position: "center"
+      theme: [default, letterbox/letterbox.scss, revealjs/monash.scss]
+      include-after-body:
+        - letterbox/theme.html
+      template-partials:
+        - letterbox/title-slide.html

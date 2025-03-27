@@ -1,28 +1,17 @@
 ---
 title: "Developing Good Research Habits"
-date: "8 April 2024"
-date-format: "D MMMM YYYY"
+subtitle: bit.ly/research_habits
 author: Rob J Hyndman
-pdf-engine: pdflatex
-fig-width: 9
-fig-height: 4.5
+date: 2025-03-31
+toc: true
+titlegraphic: bg-12.png
+titlecolor: Orange
 format:
-  beamer:
-    theme: monash
-    aspectratio: 169
-    fontsize: 14pt
-    section-titles: false
-    knitr:
-      opts_chunk:
-        dev: "CairoPDF"
+  presentation-beamer:
+    pdf-engine: pdflatex
 include-in-header: preamble.tex
-highlight-style: tango
-toc: false
 execute:
-  echo: false
-  message: false
-  warning: false
-  cache: false
+  echo: true
 ---
 
 ```{r setup1, include=FALSE}
@@ -54,11 +43,8 @@ Listen up, young padawans
 
 \only<3>{\placefig{9}{1.1}{width=7cm}{yoda}}
 
-## Outline
-\vspace*{0.7cm}
-\tableofcontents
-
 # Citing
+
 
 ## Managing references
 
@@ -224,7 +210,7 @@ citation("packagename")
 \end{alertblock}
 \end{textblock}
 
-\placefig{10.7}{0}{width=5.35cm, height=20cm}{2g9914}
+\placefig{10.7}{0}{width=5.35cm}{2g9914}
 
 ## Reproducibility
 
@@ -246,7 +232,9 @@ Someone should be able to reproduce your thesis without having to guess what sof
  * **Github** solves these problems
  * Read "Happy git with R": `happygitwithr.com`
 
-\placefig{11.5}{4.8}{width=4.2cm}{github}
+\placefig{13}{5.8}{width=1.5cm}{github-mark}
+\placefig{11.5}{7.2}{width=4.2cm}{github}
+
 
 ## Version control with git
 
@@ -260,7 +248,8 @@ Someone should be able to reproduce your thesis without having to guess what sof
     - backup and restore
     - synchronisation
 
-\placefig{11.5}{4.8}{width=4.2cm}{github}
+\placefig{13}{5.8}{width=1.5cm}{github-mark}
+\placefig{11.5}{7.2}{width=4.2cm}{github}
 
 <!-- ## Some rules for good graphics
 \fontsize{14}{16}\sf
@@ -316,7 +305,7 @@ Someone should be able to reproduce your thesis without having to guess what sof
 \begin{block}{To install:}
 \begin{itemize}
 \item Download MikTeX, MacTeX or TeXlive.
-\item Download TeXStudio from \url{texstudio.sourceforge.net/}
+\item Download TeXStudio from \url{https://www.texstudio.org/}
 \end{itemize}
 \end{block}
 \end{textblock}
@@ -329,7 +318,7 @@ Someone should be able to reproduce your thesis without having to guess what sof
 \item[\textcolor{white}{\ding{229}}] Combines R, Python  and LaTeX into one system
 \item[\textcolor{white}{\ding{229}}] Reproducible research
 \item[\textcolor{white}{\ding{229}}] Monash Thesis Template via\\
-\texttt{github.com/numbats/monash-quarto-thesis}
+\texttt{https://github.com/quarto-monash/thesis}
 \item[\textcolor{white}{\ding{229}}] Useful for assignments too
 \item[\textcolor{white}{\ding{229}}] See \url{quarto.org} for help
 \end{itemize}
@@ -423,4 +412,6 @@ Someone should be able to reproduce your thesis without having to guess what sof
 
 **Slides and links**:
 
-`bit.ly/research_habits`
+\begin{alertblock}{}
+\centerline{\Large\bf\url{bit.ly/research_habits}}
+\end{alertblock}

@@ -1,0 +1,37 @@
+\usetheme{Monash}
+
+$if(toc)$
+% Outline at start of each section
+\AtBeginSection[]{
+   \begin{frame}{Outline}\vspace*{0.7cm}
+   \tableofcontents[currentsection,hideallsubsections]
+   \end{frame}
+  }
+$endif$
+
+% FRONT PAGE
+
+\setbeamerfont{title}{series=\bfseries,parent=structure,size=\fontsize{22}{28}}
+\setbeamertemplate{title page}
+{\placefig{-0.01}{-0.01}{width=1.01\paperwidth,height=1.01\paperheight}{$titlegraphic$}
+\begin{textblock}{8.7}(1,2.8)\usebeamerfont{title}
+{\color{$titlecolor$}\raggedright\par\inserttitle}
+\end{textblock}
+\begin{textblock}{8.7}(1,5.8)\usebeamerfont{title}
+  {\normalfont\tt\bfseries\small\color{$titlecolor$}$subtitle$}
+  \end{textblock}
+\begin{textblock}{8.7}(1,6.8)
+{\color{$titlecolor$}\raggedright{\insertauthor}\mbox{}\\[0.2cm]
+\insertdate}
+\end{textblock}}
+
+% Find images
+\graphicspath{{_extensions/presentation/_images/background/}{_extensions/quarto-monash/presentation/_images/background/}{figs/}{figures/}{images/}{img/}}
+
+% Fix longtable undefined theHtable issue
+\ifdefined\theHtable\else
+\newcommand{\theHtable}{\thetable}
+\fi
+
+
+\urlstyle{tt}

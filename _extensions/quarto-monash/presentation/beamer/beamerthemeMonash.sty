@@ -1,0 +1,135 @@
+%% This is the Monash beamer theme
+%% Created for Monash Business School
+%% Updated by Rob J Hyndman. 29 May 2024 for use with quarto
+
+\RequirePackage{beamerthememetropolis}
+% Alter the color theme by setting eg 'colortheme: monashblue' in the YAML header
+\beamer@centeredfalse
+
+% Fonts
+\ifPDFTeX
+  \usepackage[scaled=0.85]{sourcecodepro}
+  \usepackage[sfdefault,lf]{FiraSans}
+  \usepackage{etoolbox}
+  \patchcmd{\@verbatim}
+    {\verbatim@font}
+    {\verbatim@font\fontsize{10}{10}\tt}
+    {}{}
+\else % if luatex or xetex
+  \usepackage[fira]{fontsetup}
+  \setmonofont[Scale=0.85]{SourceCodePro-Regular.otf}
+  \def\verbatim@font{\fontsize{10}{10}\tt}%
+\fi
+
+%% Colors
+\definecolor{DarkGrey}{RGB}{100,100,100}
+\definecolor{DarkYellow}{RGB}{230, 172, 0}
+\definecolor{grey}{RGB}{191,191,191}
+\definecolor{LightGrey}{RGB}{231,231,231}
+\definecolor{MonashBlue}{HTML}{1969AA}
+\definecolor{Orange}{RGB}{204, 89, 0}
+\definecolor{shadecolor}{RGB}{225,225,225}
+
+\setbeamercolor{alerted text}{fg=Orange}
+\setbeamercolor{block body alerted}{fg=black,bg=DarkYellow}
+\setbeamercolor{block body}{fg=black,bg=black!15!white}
+\setbeamercolor{block title alerted}{fg=white,bg=black}
+\setbeamercolor{block title}{fg=white,bg=MonashBlue}
+\setbeamercolor{description item}{fg=Orange}
+\setbeamercolor{enumerate item}{fg=Orange,bg=white}
+\setbeamercolor{enumerate subitem}{fg=Orange!50!yellow,bg=DarkGrey}
+\setbeamercolor{frametitle}{bg=MonashBlue,fg=white}
+\setbeamercolor{itemize item}{fg=Orange}
+\setbeamercolor{itemize subitem}{fg=Orange!50!yellow}
+\setbeamercolor{itemize}{fg=black}
+\setbeamercolor{normal text}{fg=black,bg=black!2}
+\setbeamercolor{progress bar}{fg=Orange}
+\setbeamercolor{section in toc shaded}{fg=DarkYellow}
+\setbeamercolor{section in toc}{fg=Orange}
+\setbeamercolor{section number projected}{bg=Orange,fg=white}
+\setbeamercolor{section}{fg=MonashBlue}
+\setbeamercolor{structure}{fg=MonashBlue}
+\setbeamercolor{subsection}{fg=MonashBlue}
+\setbeamercolor{title}{fg=white,bg=MonashBlue}
+\usebeamercolor[fg]{normal text}
+\def\shadecolor{\relax}
+
+% No section pages
+\metroset{sectionpage=none,subsectionpage=none}
+
+% Lets make descriptions and alerts bold
+\setbeamerfont{description item}{series=\bfseries}
+\setbeamerfont{alerted text}{series=\bfseries}
+
+% Footer progress bar
+\metroset{progressbar=foot}
+
+% Plenty of room
+\setlength{\metropolis@frametitle@padding}{1.6ex}
+\setbeamertemplate{frametitle}{%
+\nointerlineskip
+\begin{beamercolorbox}[wd=\paperwidth,leftskip=0.3cm,rightskip=0.3cm,ht=2.2ex,dp=1.2ex]{frametitle}
+  \usebeamerfont{frametitle}\MakeLowercase{\protect\insertframetitle}%
+\end{beamercolorbox}
+}
+
+% Rounded corners on boxes
+\useinnertheme{rounded}
+
+% Square bullets and enumerated items
+\setbeamertemplate{items}[square]
+
+% larger squares for enumeration
+\defbeamertemplate{enumerate item}{mysquare}
+{ \raisebox{-0.ex}{\hbox{%
+    \usebeamerfont*{item projected}%
+    \usebeamercolor{enumerate item}%
+    \vrule width4ex height2.7ex depth.7ex%
+    \hskip-4ex%
+    \hbox to4ex{%
+      \hfil%
+      \color{white}\raisebox{.2ex}{\insertenumlabel}%
+      \hfil}%
+  }}%
+}
+[action]
+{\setbeamerfont{item projected}{size=\scriptsize}}
+\setbeamertemplate{enumerate item}[mysquare]
+\setbeamertemplate{itemize item}[square]
+\setbeamertemplate{items}[mysquare]
+
+% Triangle and stars for nested itemize lists
+\usesubitemizeitemtemplate{%
+    \tiny\raise1.5pt\hbox{\color{beamerstructure}$\blacktriangleright$}%
+}
+\usesubsubitemizeitemtemplate{%
+    \tiny\raise1.5pt\hbox{\color{beamerstructure}$\bigstar$}%
+}
+
+% Absolute figure placement
+\RequirePackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+\def\placefig#1#2#3#4{\begin{textblock}{.1}(#1,#2)\rlap{\includegraphics[#3]{#4}}\end{textblock}}
+\def\full#1{\vspace*{-0.06cm}\centerline{\includegraphics[width=16cm,height=8.8cm,keepaspectratio=true]{#1}}}
+\def\fullwidth#1{\vspace*{-0.06cm}\centerline{\includegraphics[width=16cm,height=20cm,keepaspectratio=true]{#1}}}
+\def\fullheight#1{\vspace*{-0.06cm}\centerline{\includegraphics[width=20cm,height=8.8cm,keepaspectratio=true]{#1}}}
+
+% Tighter table of contents
+\usepackage{etoolbox}
+\pretocmd{\section}{\addtocontents{toc}{\protect\addvspace{-20\p@}}}{}{}
+\setbeamertemplate{section in toc}[square]
+\setbeamerfont{section number projected}{size=\large}
+\setbeamertemplate{section in toc shaded}[default][50]
+
+
+% Redefine shaded environment if it exists (for R plots)
+\ifcsname Shaded\endcsname
+  \definecolor{shadecolor}{RGB}{225,225,225}
+  \renewenvironment{Shaded}{\color{black}\fontsize{10}{10}\sf\begin{snugshade}\color{black}}{\end{snugshade}}
+\fi
+
+\setbeamertemplate{footline}{%
+\hfill\textcolor[rgb]{0.7,0.7,0.7}{\fbox{\insertframenumber{}}}}
+
+\beamertemplatenavigationsymbolsempty
