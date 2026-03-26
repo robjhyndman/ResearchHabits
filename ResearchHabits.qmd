@@ -2,7 +2,7 @@
 title: "Developing Good Research Habits"
 subtitle: bit.ly/research_habits
 author: Rob J Hyndman
-date: 2025-03-31
+date: 2026-03-31
 toc: true
 titlegraphic: bg-12.png
 titlecolor: Orange
@@ -44,7 +44,6 @@ Listen up, young padawans
 \only<3>{\placefig{9}{1.1}{width=7cm}{yoda}}
 
 # Citing
-
 
 ## Managing references
 
@@ -234,7 +233,6 @@ Someone should be able to reproduce your thesis without having to guess what sof
 
 \placefig{13}{5.8}{width=1.5cm}{github-mark}
 \placefig{11.5}{7.2}{width=4.2cm}{github}
-
 
 ## Version control with git
 
