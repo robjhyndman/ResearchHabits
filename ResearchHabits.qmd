@@ -56,7 +56,7 @@ Listen up, young padawans
 \item[\textcolor{white}{\ding{229}}] Web-version and local version synced
 \item[\textcolor{white}{\ding{229}}] Browser extension for adding papers/books
 \item[\textcolor{white}{\ding{229}}] Attach notes and annotations to papers.
-\item[\textcolor{white}{\ding{229}}] Works with Word, LibreOffice or LaTeX.
+\item[\textcolor{white}{\ding{229}}] Works with Word, LibreOffice, LaTeX, Rmarkdown \& Quarto
 \item[\textcolor{white}{\ding{229}}] Generate bibliography automatically
 \item[\textcolor{white}{\ding{229}}] Handles all formatting for you.
 \end{itemize}
