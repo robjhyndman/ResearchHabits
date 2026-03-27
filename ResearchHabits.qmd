@@ -123,37 +123,24 @@ citation("packagename")
 
 ## Sight what you cite
 
-\placefig{10.4}{5.4}{width=5.4cm}{bibliography}\vspace*{0.6cm}\vspace*{-0.4cm}
-\begin{textblock}{14}(0.2,1.3)
-\begin{itemize}\tightlist
-\item Every article cited should be sighted, \& preferably read.
- \item  At the very least, check that the article cited really does say what you think it says.
- \item  Type the reference information yourself.
- \item  Don’t just cite what other people say about citations.
- \item  Store accurate reference info from the start.
- \item  Give credit where it is due.
+\placefig{10.4}{5.4}{width=5.4cm}{bibliography}
 
- \only<2>{\vspace*{0.2cm}
-   \begin{itemize}\tightlist
-   \item Diebold did not invent PITs.
-   \item Hyndman did not invent\newline exponential smoothing or\newline ARIMA models.
-   \end{itemize}}
+\begin{textblock}{14}(0.2,1.3)
+\begin{itemize}
+ \item Every article cited should be sighted, \& preferably read.
+ \item At the very least, check that the article cited really does say what you think it says.
+ \item Don’t just cite what other people say about citations.
+ \item Store accurate reference info from the start.
+ \item Give credit where it is due.
 \end{itemize}
 \end{textblock}
+
 
 # Searching
 
 ## Google Scholar
 
- * Searching for papers
- * Use advanced search
- * Link GS to your reference manager
- * Track citations of key papers
- * Star papers for your own library
- * Check recommended articles
- * Check author profiles, especially highly cited authors
- * Create your own GS profile once you have (at least) one paper
- * Follow key authors in your area
+\fullwidth{google-scholar.png}
 
 ## Semantic Scholar
 
